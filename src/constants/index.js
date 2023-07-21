@@ -14,7 +14,8 @@ import {
     mongodb,
     git,
     figma,
-    docker,
+    // docker,
+    nextjs,
     meta,
     starbucks,
     tesla,
@@ -109,8 +110,8 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "Next JS",
+      icon: nextjs,
     },
   ];
   
