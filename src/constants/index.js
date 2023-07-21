@@ -17,14 +17,11 @@ import {
     // docker,
     nextjs,
     sass,
-    meta,
     starbucks,
     tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
-    threejs,
   } from "../assets";
   
   export const navLinks = [
