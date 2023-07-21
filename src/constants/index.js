@@ -16,6 +16,7 @@ import {
     figma,
     // docker,
     nextjs,
+    sass,
     meta,
     starbucks,
     tesla,
@@ -90,16 +91,16 @@ import {
       icon: tailwind,
     },
     {
+      name: 'Sass',
+      icon: sass,
+    },
+    {
       name: "Node JS",
       icon: nodejs,
     },
     {
       name: "MongoDB",
       icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
