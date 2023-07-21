@@ -118,55 +118,33 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Frontend Developer",
+      company_name: "Springboard Language Academy",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "May 2022 - Mar 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Coded using React to develop features for both mobile and desktop platforms.",
+        "Collaborating with cross-functional teams including UX/UI designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Designed and updated layouts to meet usabilty and performance requirements.",
+        "Worked with Git version control to manage code.",
+        "Increased productivity with more than 50%."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Junior Frontend Developer",
+      company_name: "Beebtech",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Oct 2020 - Dec 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Researched emerging web technologies and trends for possible incorpration into sites.",
+        "Transformed native applications into mobile-friendly products.",
+        "Teamed on user centric design strategy in translation of UX and business requirements into coded solutions.",
+        "Produced websites compatible with multiple browsers.",
+        "Designed and updated layouts to meet usability and performance requirements.",
+        "coded using HTML, CSS and JavaScript to develop features for both mobile and desktop platforms."
       ],
     },
   ];
