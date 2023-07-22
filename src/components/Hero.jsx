@@ -31,7 +31,7 @@ const Hero = () => {
                   ]}
                   wrapper="p"
                   speed={50}
-                  style={{ fontSize: '2em', display: 'inline-block' }}
+                  style={{  display: 'inline-block' }}
                   repeat={Infinity}
                   className={`${styles.heroSubText} mt-2 text-white-100 text-balance`}
                 />
