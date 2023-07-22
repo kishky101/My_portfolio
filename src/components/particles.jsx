@@ -1,9 +1,8 @@
 import { useCallback } from "react";
 
 import Particles from "react-particles";
-import particle from "../utils/particles";
 import { loadSlim } from "tsparticles-slim";
-import {herobg} from '../assets'
+
 
 const ParticlesComp = () => {
     const particlesInit = useCallback(async engine => {
