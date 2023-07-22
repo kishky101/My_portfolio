@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 
 import { styles } from "../styles";
 // import { ComputersCanvas } from "./canvas";
@@ -21,12 +22,19 @@ const Hero = () => {
               <h1 className={`${styles.heroHeadText} text-white`}>
                 Hi, I&apos;m <span className="text-[#915eff]">Marzuq</span>
               </h1>
-              <p
-                className={`${styles.heroSubText} mt-2 text-white-100 text-balance`}
-              >
-                I develop 3D visuals, user <br className="sm:block hidden" />{" "}
-                interfaces and web applications
-              </p>
+                <TypeAnimation
+                  sequence={[
+                    'Crafting seamless code for captivating experiences.',
+                    2000, 
+                    'Empowering web innovation through elegant frontend development.',
+                    2000,
+                  ]}
+                  wrapper="p"
+                  speed={50}
+                  style={{ fontSize: '2em', display: 'inline-block' }}
+                  repeat={Infinity}
+                  className={`${styles.heroSubText} mt-2 text-white-100 text-balance`}
+                />
             </div>
 
             <div className="self-center marzuq">
