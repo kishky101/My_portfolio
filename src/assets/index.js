@@ -21,7 +21,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import nextjs from "./tech/nextjs.svg";
+import nextjs from "./tech/nextjs.png";
 import sass from "./tech/sass.svg"
 
 import meta from "./company/meta.png";
