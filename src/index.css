@@ -254,9 +254,6 @@
 }
 
 .marzuq {
-  /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
-  /* clip-path: polygon(0 0, 50% 90%, 95% 0); */
-  /* clip-path: ellipse(38% 48% at 49% 48%); */
   clip-path: ellipse(50% 45% at 51% 49%);
   position: relative;
 }
@@ -265,8 +262,26 @@
   content: '';
   position: absolute;
   inset: 0;
-  
-  /* background: red; */
 
-  //background: #804dee60;
+}
+
+.planet {
+  transition: all 1s;
+  animation: rolling 60s ease-in-out 0s infinite forwards;
+}
+
+.planet:hover {
+  animation-duration: 1s;
+}
+
+@keyframes rolling {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

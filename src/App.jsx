@@ -1,29 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from './components'
+import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works} from './components'
 
-import ParticlesComp from "./components/particles";
-
-import { useCallback } from "react";
-
-import Particles from "react-particles";
-//import particle from "../utils/particles";
-import { loadSlim } from "tsparticles-slim";
 
 const App = () => {
 
-    // const particlesInit = useCallback(async engine => {
-    //     console.log(engine);
-    //     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    //     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    //     // starting from v2 you can add only the features you need reducing the bundle size
-    //     //await loadFull(engine);
-    //     await loadSlim(engine);
-    // }, []);
-
-    // const particlesLoaded = useCallback(async container => {
-    //     await console.log(container);
-    // }, []);
 
     return (
         <BrowserRouter>
@@ -40,7 +21,6 @@ const App = () => {
                     <Feedbacks />
                     <div className="relative z-0">
                         <Contact />
-                        <StarsCanvas />
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ import ParticlesComp from "./particles";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto overflow-hidden">
         
         <div
           className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-[1]`}
@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 violet-gradient " />
           </div>
           <div className="flex gap-20 flex-col md:flex-row justify-center items-center">
-            <div>
+            <div className="">
               <h1 className={`${styles.heroHeadText} text-white`}>
                 Hi, I&apos;m <span className="text-[#915eff]">Marzuq</span>
               </h1>
@@ -37,11 +37,11 @@ const Hero = () => {
                 />
             </div>
 
-            <div className="self-center marzuq">
+            <div className="self-center marzuq overflow-hidden max-w-full ">
               <img 
                 src={marzuq}
                 alt="marzuq"
-                className="max-w-[500px] max-h-[500px] object-cover"
+                className="max-w-[500px] w-full h-full max-h-[500px] object-cover"
               />
             </div>
           </div>
@@ -54,7 +54,7 @@ const Hero = () => {
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-[100]">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.dev
+            <motion.div
               animate={{
                 y: [0, 24, 0],
               }}
