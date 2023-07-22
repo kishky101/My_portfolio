@@ -17,11 +17,11 @@ import {
     // docker,
     nextjs,
     sass,
-    starbucks,
-    tesla,
     carrent,
     jobit,
     tripguide,
+    springboard,
+    beebtech
   } from "../assets";
   
   export const navLinks = [
@@ -117,7 +117,7 @@ import {
     {
       title: "Frontend Developer",
       company_name: "Springboard Language Academy",
-      icon: starbucks,
+      icon: springboard,
       iconBg: "#383E56",
       date: "May 2022 - Mar 2023",
       points: [
@@ -132,7 +132,7 @@ import {
     {
       title: "Junior Frontend Developer",
       company_name: "Beebtech",
-      icon: tesla,
+      icon: beebtech,
       iconBg: "#E6DEDD",
       date: "Oct 2020 - Dec 2021",
       points: [

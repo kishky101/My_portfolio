@@ -9,6 +9,8 @@ import close from "./close.svg";
 import myLogo from './myLogo.svg'
 import herobg from './herobg.png'
 import planet from './planet.png'
+import springboard from './springboard.png'
+import beebtech from './beebtech.jpg'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -70,5 +72,7 @@ export {
   tripguide,
   marzuq,
   herobg,
-  planet
+  planet,
+  springboard,
+  beebtech
 };
