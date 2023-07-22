@@ -43,7 +43,7 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 0.3)}
+        variants={fadeIn("", "", 0, 0.2)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         A skilled Frontend Developer with over 2 years of experience creating and implementing innovative solutions for web applications. My expertise in producing interactive user experiences, ensuring the highest level of responsiveness, and rapidly debugging code have enabled me to be a valuable assest to my previous employers. My excellent interpersonal and communication skills enables me to collaborate productively both internally, within programming teams as well as externally with clients. 
