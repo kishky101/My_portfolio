@@ -17,7 +17,7 @@ const FeedbackCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("", "spring", index * 0.1, 0.25)}
       className="bg-black-200 p-10 rounded-3xl xs:w-[320px] "
     >
       <p className="text-white font-black text-[48px]">&quot;</p>
