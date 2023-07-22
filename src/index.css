@@ -252,3 +252,21 @@
   border-style: solid;
   border-color: rgb(123, 112, 112) transparent transparent transparent;
 }
+
+.marzuq {
+  /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+  /* clip-path: polygon(0 0, 50% 90%, 95% 0); */
+  /* clip-path: ellipse(38% 48% at 49% 48%); */
+  clip-path: ellipse(50% 45% at 51% 49%);
+  position: relative;
+}
+
+.marzuq::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  
+  /* background: red; */
+
+  //background: #804dee60;
+}
