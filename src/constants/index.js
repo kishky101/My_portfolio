@@ -1,3 +1,4 @@
+import { BsLinkedin, BsGithub, BsWhatsapp, BsTelegram  } from 'react-icons/bs'
 import {
     mobile,
     backend,
@@ -238,5 +239,28 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
+
+  const links = [
+    {
+      name: 'Linkedin',
+      icon: BsLinkedin,
+      url: 'https://www.linkedin.com/in/kishky101/'
+    },
+    {
+      name: 'Github',
+      icon: BsGithub,
+      url: 'https://github.com/kishky101'
+    },
+    {
+      name: 'Whatsapp',
+      icon: BsWhatsapp,
+      url: 'https://wa.me/48733026916'
+    },
+    {
+      name: 'Telegram',
+      icon: BsTelegram,
+      url: 'https://t.me/+48733026916'
+    },
+  ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, links };

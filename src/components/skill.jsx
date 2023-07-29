@@ -15,7 +15,7 @@ const Skill = ({icon, name}) => {
                 repeat: Infinity,
                 repeatType: "loop",
             }}
-            className='w-20 violet-gradient skill p-3 '>
+            className='w-20 skill p-3 '>
             <img 
                 src={icon}
                 alt={'imageUrl'}

@@ -206,6 +206,13 @@
 
 .skill {
   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  background: rgba(159, 159, 184, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  /* border: 1px solid rgba(159, 159, 184, 0.77); */
+  z-index: -1;
 }
 
 .tooltip {
@@ -284,4 +291,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.links {
+background: rgba(169, 169, 199, 0.23);
+border-radius: 50px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+border: 1px solid rgba(169, 169, 199, 0.09);
 }
