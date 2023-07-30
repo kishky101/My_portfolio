@@ -17,6 +17,7 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const {name, email, message} = form;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,6 +28,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+
+    if (!name || !email ||  !message) return alert('please all fields are required');
 
     emailjs
       .send(
