@@ -1,19 +1,58 @@
 import { BrowserRouter } from "react-router-dom";
 
-import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works} from './components'
+import {About, Contact, Experience, Hero, Navbar, Tech, Works} from './components'
+import { useContext, useEffect } from "react";
+import { BsMoonFill, BsSunFill } from "react-icons/bs";
+import { ThemeContext } from "./context/theme.context";
 
 
 const App = () => {
+    // const [theme, setTheme] = useState('dark');
+    const {theme, setTheme} = useContext(ThemeContext);
+    console.log(theme)
+    
+
+    useEffect(() => {
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setTheme('dark')
+        } else {  
+            setTheme('light')
+        }
+    }, []);
+
+    useEffect(() => {
+        if(theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            localStorage.theme = 'dark';
+        }else {
+            document.documentElement.classList.remove('dark');
+            localStorage.theme = 'light';
+        }
+    }, [theme])
+
+    // // console.log(document.documentElement)
+
+    const toggleTheme = () => {
+        setTheme((prev) => prev === 'dark'? 'light': 'dark');
+        localStorage.setItem('theme', theme)
+    };
+    // console.log(theme)
 
 
     return (
         <BrowserRouter>
-            <div className="relative bg-primary">
+            <div className="relative bg-l-primary dark:bg-primary">
+            <div 
+                className={`${theme === 'dark'? 'bg-white-100' : 'bg-primary'} fixed right-0 top-[100px] w-10 h-10 rounded-l flex justify-center items-center z-[100] cursor-pointer`}
+                onClick={toggleTheme}
+            >
+                {theme === 'dark'? <BsSunFill id="sun" color="#050816" />: <BsMoonFill id="moon" />} 
+            </div>
                 <div className="relative bg-hero-pattern bg-cover bg-no-repeat bg-center">
                     <Navbar />
                     <Hero />
                 </div>
-                <div className="bg-primary z-0">
+                <div className="bg-l-primary dark:bg-primary z-0">
                     <About />
                     <Experience />
                     <Tech />

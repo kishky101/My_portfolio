@@ -12,13 +12,15 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useContext } from "react";
+import { ThemeContext } from "../context/theme.context";
 
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, theme }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: theme === 'dark'? '#1d1836': '#fff',
+        color: theme === 'dark'? "#fff" :"#333333",
       }}
       contentArrowStyle={{
         borderRight: "7px solid #232631",
@@ -36,9 +38,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-t-secondary dark:text-white text-[24px] font-bold">{experience.title}</h3>
         <p
-          className="text-secondary text-[16px] font-semibold"
+          className="text-t-secondary dark:text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -49,7 +51,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className=" text-t-secondary dark:text-white-100 text-[14px] pl-1 tracking-wider"
           >
             {point}
           </li>
@@ -60,6 +62,8 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const {theme} = useContext(ThemeContext)
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -70,7 +74,7 @@ const Experience = () => {
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-            <ExperienceCard experience={experience} key={index} />
+            <ExperienceCard experience={experience} key={index} theme={theme} />
           ))}
         </VerticalTimeline>
       </div>

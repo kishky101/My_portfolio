@@ -1,4 +1,5 @@
-import { useCallback } from "react";
+import { useCallback, useContext } from "react";
+import { ThemeContext } from "../context/theme.context";
 
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
@@ -19,6 +20,8 @@ const ParticlesComp = () => {
         //await console.log(container);
     }, []);
 
+    const {theme} = useContext(ThemeContext)
+
 
   return   <Particles 
   id="tsparticles"
@@ -27,7 +30,8 @@ const ParticlesComp = () => {
   options={{
       background: {
             color: {
-                value: "#050816",
+                // value: theme === 'dark'? "#050816" : "#F0F3F6",
+                value: '#F03f6'
             },
       },
       fpsLimit: 120,
@@ -60,10 +64,10 @@ const ParticlesComp = () => {
       },
       particles: {
           color: {
-              value: "#ffffff",
+              value: theme === 'dark'? '#fff': "#333333",
           },
           links: {
-              color: "#ffffff",
+              color: theme === 'dark'? '#fff': "#333333",
               distance: 150,
               enable: true,
               opacity: 0.5,

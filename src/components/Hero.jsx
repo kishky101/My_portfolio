@@ -9,7 +9,7 @@ import ParticlesComp from "./particles";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto overflow-hidden">
-        
+       
         <div
           className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10`}
         >
@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
           <div className="flex gap-20 flex-col md:flex-row justify-center items-center">
             <div className="">
-              <h1 className={`${styles.heroHeadText} text-white`}>
+              <h1 className={`${styles.heroHeadText} text-t-secondary dark:text-white`}>
                 Hi, I&apos;m <span className="text-[#915eff]">Marzuq</span>
               </h1>
                 <TypeAnimation
@@ -36,6 +36,7 @@ const Hero = () => {
                   className={`${styles.heroSubText} mt-2 text-white-100 text-balance`}
                 />
             </div>
+           
 
             <div className="self-center marzuq overflow-hidden max-w-full ">
               <img 

@@ -15,14 +15,15 @@ import {
     mongodb,
     git,
     figma,
-    // docker,
     nextjs,
     sass,
-    carrent,
-    jobit,
-    tripguide,
     springboard,
-    beebtech
+    beebtech,
+    Crown,
+    Shareme,
+    Threads,
+    Faceapp,
+    postgres
   } from "../assets";
   
   export const navLinks = [
@@ -65,16 +66,8 @@ import {
       icon: javascript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
       name: "TypeScript",
       icon: typescript,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "HTML 5",
@@ -84,6 +77,16 @@ import {
       name: "CSS 3",
       icon: css,
     },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+
+    {
+      name: "Redux Toolkit",
+      icon: redux,
+    },
+
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -97,8 +100,16 @@ import {
       icon: nodejs,
     },
     {
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
       name: "MongoDB",
       icon: mongodb,
+    },
+    {
+      name: "PostgresSQL",
+      icon: postgres,
     },
     {
       name: "git",
@@ -107,10 +118,6 @@ import {
     {
       name: "figma",
       icon: figma,
-    },
-    {
-      name: "Next JS",
-      icon: nextjs,
     },
   ];
   
@@ -176,67 +183,136 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Crown Clothing",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "An exceptional web-based E-commerce venture, providing robust user authentication, seamless product browsing, detailed product insights, effortless cart management including addition and removal of items, streamlined checkout process, and secure credit card payment functionality.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "styled-component",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "stripe",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: Crown,
+      source_code_link: "https://github.com/kishky101/crown-clothing",
+      live_link: "https://crown-clothingreact.netlify.app/",
+    },
+    {
+      name: "Shareme",
+      description:
+        "A cutting-edge web-based social media application tailored for image aficionados. This innovative platform offers streamlined user authentication via Google, effortless sharing of captivating images with fellow users, the convenience of downloading and saving shared visuals, interactive engagement through comments, and a sophisticated image search functionality.",      
+        tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
         {
-          name: "react",
+          name: "sanity",
           color: "blue-text-gradient",
         },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: Shareme,
+      source_code_link: "https://github.com/kishky101/shareit_frontend",
+      live_link: "https://lets-shareit.netlify.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Threads",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A sophisticated web-based social media platform that excels in user authentication, effortless thread sharing, engaging multi-level thread commenting, comprehensive activity tracking, seamless organization creation, user-invite functionality for organizations, and intelligent user and organization suggestions for an enriched viewing experience.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "clerk",
+          color: "blue-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: Threads,
+      source_code_link: "https://github.com/kishky101/Threads_app",
+      live_link: "https://threads-app-delta.vercel.app/"
+    },
+    {
+      name: "Face Recognition",
+      description:
+      "An advanced facial recognition application, seamlessly integrating user authentication. This state-of-the-art app empowers users to submit image URLs via an intuitive input element, triggering the emergence of a highlighted box around detected faces within the image.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tachyons",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Node",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "postgresSQL",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: Faceapp,
+      source_code_link: "https://github.com/kishky101/face-recognition",
+      live_link: "https://face-recognition-app-wwfg.onrender.com/"
     },
   ];
 

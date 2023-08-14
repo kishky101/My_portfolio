@@ -26,7 +26,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import nextjs from "./tech/nextjs.png";
-import sass from "./tech/sass.svg"
+import sass from "./tech/sass.svg";
+import postgres from "./tech/postgres.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,7 +37,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import marzuq from "./my-picture.png"
+import marzuq from "./my-picture.png";
+import Crown from "./crown-clothing.png";
+import Shareme from "./shareme.png";
+import Threads from "./threads.png";
+import Faceapp from "./face-recognition.png";
+
 
 export {
   logo,
@@ -74,5 +80,10 @@ export {
   herobg,
   planet,
   springboard,
-  beebtech
+  beebtech,
+  Crown,
+  Shareme,
+  Threads,
+  Faceapp,
+  postgres
 };

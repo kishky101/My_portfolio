@@ -9,11 +9,13 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({index, name, description, tags, image, source_code_link, live_link}) => {
 
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.1, 0.25)}
+      onClick={() => window.open(live_link, '_blank')}
+      className="cursor-pointer"
     >
      <Tilt 
       options={{
@@ -21,7 +23,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
         scale: 1,
         speed: 450
       }}
-      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      className='bg-l-tertiary dark:bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
      >
       <div className="relative w-full h-[230px]">
         <img 
@@ -45,8 +47,8 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
       </div>
 
       <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <h3 className="text-t-secondary dark:text-white font-bold text-[24px]">{name}</h3>
+        <p className="mt-2 text-t-secondary dark:text-secondary text-[14px]">{description}</p>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -75,9 +77,9 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-t-secondary dark:text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcase my skills and experience through real-world examples of my work. Each projects is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with diffrent technologies, and manage projects effectively.
+          Within the following projects, I showcase my prowess and expertise through tangible, real-world demonstrations of my work. Each project is succinctly outlined, accompanied by direct links to code repositories and live demos. This collection exemplifies my capacity to tackle intricate challenges, navigate diverse technologies, and execute projects with adept management.
         </motion.p>
       </div>
 
