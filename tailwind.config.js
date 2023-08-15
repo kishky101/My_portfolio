@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "l-hero-pattern": "url('/src/assets/light-hero.png')",
       },
     },
   },

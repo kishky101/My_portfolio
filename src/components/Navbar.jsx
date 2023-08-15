@@ -9,9 +9,19 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
+
+  const navStyle = {
+    background: 'rgba(5, 8, 22, 0.61)',
+    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(8.4px)',
+    WebkitBackdropFilter: 'blur(8.4px)',
+  
+  }
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-[99999] bg-primary `}
+      style={navStyle}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link

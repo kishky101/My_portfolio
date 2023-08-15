@@ -33,7 +33,7 @@ const Hero = () => {
                   speed={50}
                   style={{  display: 'inline-block' }}
                   repeat={Infinity}
-                  className={`${styles.heroSubText} mt-2 text-white-100 text-balance`}
+                  className={`${styles.heroSubText} mt-2 text-t-secondary dark:text-white-100 text-balance`}
                 />
             </div>
            

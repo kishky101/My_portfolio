@@ -7,9 +7,7 @@ import { ThemeContext } from "./context/theme.context";
 
 
 const App = () => {
-    // const [theme, setTheme] = useState('dark');
     const {theme, setTheme} = useContext(ThemeContext);
-    console.log(theme)
     
 
     useEffect(() => {
@@ -18,6 +16,7 @@ const App = () => {
         } else {  
             setTheme('light')
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
@@ -30,13 +29,12 @@ const App = () => {
         }
     }, [theme])
 
-    // // console.log(document.documentElement)
+    
 
     const toggleTheme = () => {
         setTheme((prev) => prev === 'dark'? 'light': 'dark');
         localStorage.setItem('theme', theme)
     };
-    // console.log(theme)
 
 
     return (
@@ -48,7 +46,7 @@ const App = () => {
             >
                 {theme === 'dark'? <BsSunFill id="sun" color="#050816" />: <BsMoonFill id="moon" />} 
             </div>
-                <div className="relative bg-hero-pattern bg-cover bg-no-repeat bg-center">
+                <div className="relative bg-l-hero-pattern dark:bg-hero-pattern bg-cover bg-no-repeat bg-center">
                     <Navbar />
                     <Hero />
                 </div>
