@@ -123,7 +123,7 @@ import {
   
   const experiences = [
     {
-      title: "Frontend Developer",
+      title: "Junior Frontend Developer",
       company_name: "Springboard Language Academy",
       icon: springboard,
       iconBg: "#383E56",
@@ -138,7 +138,7 @@ import {
       ],
     },
     {
-      title: "Junior Frontend Developer",
+      title: "Frontend Developer Intern",
       company_name: "Beebtech",
       icon: beebtech,
       iconBg: "#E6DEDD",
