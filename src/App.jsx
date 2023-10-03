@@ -38,14 +38,13 @@ const App = () => {
 
 
     return (
-        <BrowserRouter>
             <div className="relative bg-l-primary dark:bg-primary">
-            <div 
-                className={`${theme === 'dark'? 'bg-white-100' : 'bg-primary'} fixed right-0 top-[100px] w-10 h-10 rounded-l flex justify-center items-center z-[100] cursor-pointer`}
-                onClick={toggleTheme}
-            >
-                {theme === 'dark'? <BsSunFill id="sun" color="#050816" />: <BsMoonFill id="moon" />} 
-            </div>
+                <div 
+                    className={`${theme === 'dark'? 'bg-white-100' : 'bg-primary'} fixed right-0 top-[100px] w-10 h-10 rounded-l flex justify-center items-center z-[100] cursor-pointer`}
+                    onClick={toggleTheme}
+                >
+                    {theme === 'dark'? <BsSunFill id="sun" color="#050816" />: <BsMoonFill id="moon" />} 
+                </div>
                 <div className="relative bg-l-hero-pattern dark:bg-hero-pattern bg-cover bg-no-repeat bg-center">
                     <Navbar />
                     <Hero />
@@ -61,7 +60,6 @@ const App = () => {
                     </div>
                 </div>
             </div>
-        </BrowserRouter>
     )
 }
 
