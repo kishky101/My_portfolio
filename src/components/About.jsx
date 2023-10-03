@@ -112,6 +112,7 @@ const About = () => {
               target="_blank" 
               rel="noreferrer"
               className="text-[30px]"
+              aria-label={name}
             >
               {icon()}
             </a>
