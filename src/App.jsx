@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 
 import {About, Contact, Experience, Hero, Navbar, Tech, Works} from './components'
 import { useContext, useEffect } from "react";
