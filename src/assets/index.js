@@ -6,11 +6,11 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import myLogo from './myLogo.svg'
-import herobg from './herobg.png'
-import planet from './planet.png'
-import springboard from './springboard.png'
-import beebtech from './beebtech.jpg'
+import myLogo from "./myLogo.svg";
+import herobg from "./herobg.png";
+import planet from "./planet.png";
+import springboard from "./springboard.png";
+import beebtech from "./beebtech.jpg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -29,20 +29,12 @@ import nextjs from "./tech/nextjs.png";
 import sass from "./tech/sass.svg";
 import postgres from "./tech/postgres.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import marzuq from "./my-picture.png";
 import Crown from "./crown-clothing.png";
 import Shareme from "./shareme.png";
 import Threads from "./threads.png";
 import Faceapp from "./face-recognition.png";
-
+import Jotion from "./jotion.png";
 
 export {
   logo,
@@ -69,13 +61,6 @@ export {
   threejs,
   nextjs,
   sass,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   marzuq,
   herobg,
   planet,
@@ -85,5 +70,6 @@ export {
   Shareme,
   Threads,
   Faceapp,
-  postgres
+  postgres,
+  Jotion,
 };
