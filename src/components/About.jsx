@@ -10,6 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { useContext, useState } from "react";
 import { ThemeContext } from "../context/theme.context";
+import { MyResume } from "../assets/index";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -104,7 +105,7 @@ const About = () => {
             <a
               className="px-3 py-3 text-white"
               style={theme === "dark" ? darkLinkStyle : lightLinkStyle}
-              href="../assets/Marzuq_Adebayo_Resume.pdf"
+              href={MyResume}
               download
               onClick={() => setView(false)}
             >

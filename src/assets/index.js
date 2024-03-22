@@ -35,6 +35,7 @@ import Shareme from "./shareme.png";
 import Threads from "./threads.png";
 import Faceapp from "./face-recognition.png";
 import Jotion from "./jotion.png";
+import MyResume from "./Marzuq_Adebayo_Resume.pdf"
 
 export {
   logo,
@@ -72,4 +73,5 @@ export {
   Faceapp,
   postgres,
   Jotion,
+  MyResume
 };
